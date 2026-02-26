@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="M4 Gallery - Browse our exclusive motorcycle gallery. Explore premium motorcycles including sport bikes, cruisers, adventure bikes, and touring motorcycles.">
+    <meta name="keywords" content="motorcycle gallery, browse motorcycles, sport bikes gallery, cruiser bikes, adventure motorcycles, touring bikes">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Motorcycle Gallery - M4 Gallery">
+    <meta property="og:description" content="Browse exclusive collection of premium motorcycles">
+    
+    <title>Motorcycle Gallery - Browse Premium Bikes | M4 Gallery</title>
+    <link rel="canonical" href="https://www.m4gallery.com/gallery.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Motorcycle Gallery",
+      "description": "Premium motorcycle gallery featuring luxury bikes"
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-motorcycle" aria-hidden="true"></i>
+                <span>M4 Gallery</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="collection.html" class="nav-link">Collections</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Motorcycle Gallery</h1>
+        <p>Explore our exclusive collection of premium motorcycles</p>
+    </div>
+
+    <!-- Gallery Section -->
+    <section class="gallery-page" role="main" aria-labelledby="gallery-heading">
+        <div class="container">
+            <h2 id="gallery-heading" class="sr-only">Browse Motorcycles</h2>
+            
+            <div class="gallery-controls">
+                <div class="search-box">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input type="text" id="searchBox" placeholder="Search motorcycles..." aria-label="Search motorcycles">
+                </div>
+                
+                <div class="filter-buttons" role="group" aria-label="Filter motorcycles by type">
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-btn" data-filter="sport" aria-pressed="false">Sport</button>
+                    <button class="filter-btn" data-filter="cruiser" aria-pressed="false">Cruiser</button>
+                    <button class="filter-btn" data-filter="adventure" aria-pressed="false">Adventure</button>
+                    <button class="filter-btn" data-filter="touring" aria-pressed="false">Touring</button>
+                </div>
+
+                <div class="view-toggle" role="group" aria-label="Change view">
+                    <button class="view-btn active" data-view="grid" aria-pressed="true" aria-label="Grid view"><i class="fas fa-th" aria-hidden="true"></i></button>
+                    <button class="view-btn" data-view="list" aria-pressed="false" aria-label="List view"><i class="fas fa-list" aria-hidden="true"></i></button>
+                </div>
+            </div>
+
+            <div class="gallery-grid" id="galleryContainer">
+                <!-- Sport Bike 1 -->
+                <article class="gallery-item sport" data-name="Lightning Racer">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://www.cycleworld.com/resizer/FNiCjJYFHmvrj0B2Ik2ft1h0hJA=/1440x0/smart/cloudfront-us-east-1.images.arcpublishing.com/octane/3QSKYK4E65CCFI4WLDPO63VM3Q.jpg" alt="Lightning Racer - High-performance sport motorcycle">
+                        <div class="gallery-overlay">
+                            <h3>Ducati Panigale V4</h3>
+                            <p>High Performance Sport</p>
+                            
+                        </div>
+                        <span class="category-badge sport">SPORT</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Ducati Panigale V4</h4>
+                        <p class="model-year">2026 Model</p>
+                        <p class="specs"><i class="fas fa-tachometer-alt" aria-hidden="true"></i> 215 HP</p>
+                    </div>
+                </article>
+
+                <!-- Cruiser 1 -->
+                <article class="gallery-item cruiser" data-name="Midnight Cruiser">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://buyasuperbike.com/wp-content/uploads/2024/12/20240108140407.jpg" alt="Midnight Cruiser - Classic luxury cruiser motorcycle">
+                        <div class="gallery-overlay">
+                            <h3>Benda Napoleon Bob 500</h3>
+                            <p>Classic Comfort Ride</p>
+                        </div>
+                        <span class="category-badge cruiser">CRUISER</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Benda Napoleon Bob 500</h4>
+                        <p class="model-year">2026 Model</p>
+                        <p class="specs"><i class="fas fa-crown" aria-hidden="true"></i> 46.9 HP</p>
+                    </div>
+                </article>
+
+                <!-- Adventure 1 -->
+                <article class="gallery-item adventure" data-name="Trail Explorer">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://imgcdn.zigwheels.my/large/gallery/exterior/54/1194/bmw-s-1000-xr-slant-front-view-full-image-245883.jpg" alt="Trail Explorer - All-terrain adventure motorcycle">
+                        <div class="gallery-overlay">
+                            <h3>BMW S 1000 XR</h3>
+                            <p>Long Distance Riding</p>
+                        </div>
+                        <span class="category-badge adventure">ADVENTURE</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>BMW S 1000 XR</h4>
+                        <p class="model-year">2026 Model</p>
+                        <p class="specs"><i class="fas fa-mountain" aria-hidden="true"></i> 162 HP</p>
+                    </div>
+                </article>
+
+                <!-- Sport Bike 2 -->
+                <article class="gallery-item sport" data-name="Thunder Beast">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://imgcdn.zigwheels.my/large/gallery/exterior/61/1502/kawasaki-ninja-250-slant-rear-view-full-image-700720.jpg" alt="Thunder Beast - Ultimate speed machine sport motorcycle">
+                        <div class="gallery-overlay">
+                            <h3>Kawasaki Ninja 250</h3>
+                            <p>Lightweight Entry-Level Sportbike</p>
+                        </div>
+                        <span class="category-badge sport">SPORT</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Kawasaki Ninja 250</h4>
+                        <p class="model-year">2026 Model</p>
+                        <p class="specs"><i class="fas fa-lightning" aria-hidden="true"></i> 39 HP</p>
+                    </div>
+                </article>
+
+                <!-- Touring 1 -->
+                <article class="gallery-item touring" data-name="Grand Traveler">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://www.zabikers.co.za/wp-content/uploads/2019/11/Tracer-Cover.jpg"alt="Grand Traveler - Long-distance touring motorcycle">
+                        <div class="gallery-overlay">
+                            <h3>Yamaha Tracer 900 GT</h3>
+                            <p>The Ultimate Sport Tourer</p>
+                        </div>
+                        <span class="category-badge touring">TOURING</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Yamaha Tracer 900 GT</h4>
+                        <p class="model-year">2026 Model</p>
+                        <p class="specs"><i class="fas fa-road" aria-hidden="true"></i> 113.4 HP</p>
+                    </div>
+                </article>
+
+                <!-- Cruiser 2 -->
+                <article class="gallery-item cruiser" data-name="Heritage Classic">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://www.cycleworld.com/resizer/EiomyQUgU2Fi9AxHEp3OL46Sq4s=/arc-photo-octane/arc3-prod/public/T3TRG4XRLVAF3H4UYGJC6VGLDI.jpg" alt="Heritage Classic - Timeless elegance cruiser motorcycle">
+                        <div class="gallery-overlay">
+                            <h3>Harley-Davidson Low Rider</h3>
+                            <p>Timeless Elegance</p>
+                        </div>
+                        <span class="category-badge cruiser">CRUISER</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Harley-Davidson Low Rider</h4>
+                        <p class="model-year">2026 Model</p>
+                        <p class="specs"><i class="fas fa-star" aria-hidden="true"></i> 114 HP</p>
+                    </div>
+                </article>
+
+                <!-- Adventure 2 -->
+                <article class="gallery-item adventure" data-name="Desert Storm">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://imgcdn.zigwheels.my/large/gallery/exterior/69/965/suzuki-v-strom-650-slant-front-view-full-image-484390.jpg" alt="Desert Storm - All-terrain adventure motorcycle beast">
+                        <div class="gallery-overlay">
+                            <h3>Suzuki V-Strom 650</h3>
+                            <p>The Master of Adventure</p>
+                        </div>
+                        <span class="category-badge adventure">ADVENTURE</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Suzuki V-Strom 650</h4>
+                        <p class="model-year">2026 Model</p>
+                        <p class="specs"><i class="fas fa-mountain" aria-hidden="true"></i> 645 HP</p>
+                    </div>
+                </article>
+
+                <!-- Sport Bike 3 -->
+                <article class="gallery-item sport" data-name="Apex Turbo">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://imgcdn.zigwheels.my/large/gallery/exterior/60/1704/honda-cbr250rr-right-side-viewfull-image-740690.jpg" alt="Apex Turbo - Performance king sport motorcycle">
+                        <div class="gallery-overlay">
+                            <h3>Honda CBR250RR</h3>
+                            <p>Performance King</p>
+                        </div>
+                        <span class="category-badge sport">SPORT</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Honda CBR250RR</h4>
+                        <p class="model-year">2026 Model</p>
+                        <p class="specs"><i class="fas fa-tachometer-alt" aria-hidden="true"></i> 41 HP</p>
+                    </div>
+                </article>
+
+                <!-- Touring 2 -->
+                <article class="gallery-item touring" data-name="Luxury Voyager">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/octane/2YDJHJDJR4MXKEAZRB7CIFRHFE.jpg" alt="Luxury Voyager - Premium touring motorcycle experience">
+                        <div class="gallery-overlay">
+                            <h3>Kawasaki Versys 1000 SE</h3>
+                            <p>Premium Touring</p>
+                        </div>
+                        <span class="category-badge touring">TOURING</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Kawasaki Versys 1000 SE</h4>
+                        <p class="model-year">2026 Model</p>
+                        <p class="specs"><i class="fas fa-star" aria-hidden="true"></i> 118 Hp</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="no-results" style="display: none;" role="alert">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <h3>No motorcycles found</h3>
+                <p>Try adjusting your filters or search terms</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Comparison Section -->
+    <section class="specs-comparison" aria-labelledby="specs-title">
+        <div class="container">
+            <h2 id="specs-title" class="section-title">Motorcycle Specifications</h2>
+            <p class="comparison-subtitle">Compare specifications across our featured motorcycle models</p>
+            <div class="comparison-table">
+                <table summary="Comparison of motorcycle specifications including engine, power, and performance">
+                    <thead>
+                        <tr>
+                            <th scope="col">Model</th>
+                            <th scope="col">Engine<br><span class="spec-category">Capacity</span></th>
+                            <th scope="col">Horsepower<br><span class="spec-category">Output</span></th>
+                            <th scope="col">0-100 km/h<br><span class="spec-category">Acceleration</span></th>
+                            <th scope="col">Top Speed<br><span class="spec-category">Maximum</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Ducati Panigale V4</th>
+                            <td>1299cc</td>
+                            <td>200 HP</td>
+                            <td>3 sec</td>
+                            <td>320 km/h</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Benda Napoleon Bob 500</th>
+                            <td>475.6cc</td>
+                            <td>46.9 HP</td>
+                            <td>7.07 sec</td>
+                            <td>178 km/h</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">BMW S 1000 XR</th>
+                            <td>999cc</td>
+                            <td>162 HP</td>
+                            <td>3.1 sec</td>
+                            <td>274 km/h</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Kawasaki Ninja 250</th>
+                            <td>249cc</td>
+                            <td>39 HP</td>
+                            <td>5.75 sec</td>
+                            <td>170 km/h</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Harley-Davidson Low Rider</th>
+                            <td>1745cc</td>
+                            <td>175 HP</td>
+                            <td>4.2 sec</td>
+                            <td>180 km/h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>M4 Gallery</h4>
+                    <p>Your premier destination for premium motorcycle gallery and showcase</p>
+                    <div class="social-links" role="list">
+                        <a href="#" role="listitem" aria-label="M4 Gallery Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" role="listitem" aria-label="M4 Gallery Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" role="listitem" aria-label="M4 Gallery Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" role="listitem" aria-label="M4 Gallery YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul role="list">
+                        <li role="listitem"><a href="index.html">Home</a></li>
+                        <li role="listitem"><a href="gallery.html">Gallery</a></li>
+                        <li role="listitem"><a href="collection.html">Collections</a></li>
+                        <li role="listitem"><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Gallery Collections</h4>
+                    <ul role="list">
+                        <li role="listitem"><a href="collection.html#sport">Sport Bikes</a></li>
+                        <li role="listitem"><a href="collection.html#cruiser">Cruiser Bikes</a></li>
+                        <li role="listitem"><a href="collection.html#adventure">Adventure Bikes</a></li>
+                        <li role="listitem"><a href="collection.html#touring">Touring Bikes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul role="list">
+                        <li role="listitem"><a href="#" rel="nofollow">Gallery FAQ</a></li>
+                        <li role="listitem"><a href="#" rel="nofollow">Privacy Policy</a></li>
+                        <li role="listitem"><a href="#" rel="nofollow">Terms of Service</a></li>
+                        <li role="listitem"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 M4 Gallery. All Rights Reserved. | Premium Motorcycle Gallery | <a href="sitemap.xml" rel="nofollow">Sitemap</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
