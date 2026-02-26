@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact M Gallery - Reach out with your motorcycle gallery inquiries. Phone, email, and contact form available.">
+    <meta name="keywords" content="contact motorcycle gallery, gallery inquiries, motorcycle questions, get in touch">
+    <meta name="robots" content="index, follow">
+    <title>Contact M Gallery - Motorcycle Gallery Inquiries</title>
+    <link rel="canonical" href="https://www.mgallery.com/contact.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-motorcycle" aria-hidden="true"></i>
+                <span>M Gallery</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="collection.html" class="nav-link">Collections</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Contact M Gallery</h1>
+        <p>Get in touch with our gallery team</p>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-page" role="main" aria-labelledby="contact-heading">
+        <div class="container">
+            <h2 id="contact-heading" class="sr-only">Contact Information and Form</h2>
+            
+            <!-- Contact Info Cards -->
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="info-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Visit Our Gallery</h3>
+                    <p>No17, Gallery Street</p>
+                    <p>Jalan Maju, Kajang, 43000</p>
+                    <p class="country">Malaysia</p>
+                    <a href="#" class="info-link">Get Directions <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="info-icon" aria-hidden="true"><i class="fas fa-phone"></i></div>
+                    <h3>Call Us</h3>
+                    <p>Main: <span>+60-1112345678</span></p>
+                    <p>Gallery Inquiries: <span>+60-1112345678</span></p>
+                    <p>General: <span>+60-1112345678</span></p>
+                    <a href="tel:+15551234567" class="info-link">Call Now <i class="fas fa-phone" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="info-icon" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+                    <h3>Email Us</h3>
+                    <p>General: MGallery.com</p>
+                    <p>Gallery: motor@mgallery.com</p>
+                    <p>Inquiries: inquiries@mgallery.com</p>
+                    <a href="mailto:info@mgallery.com" class="info-link">Send Email <i class="fas fa-envelope" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="info-icon" aria-hidden="true"><i class="fas fa-clock"></i></div>
+                    <h3>Gallery Hours</h3>
+                    <p><strong>Mon - Fri:</strong> 9:00 AM - 6:00 PM</p>
+                    <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+                    <p><strong>Sunday:</strong> Closed</p>
+                    <span class="status open">Currently Open</span>
+                </div>
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="contact-form-section">
+                <div class="form-header">
+                    <h2 class="section-title">Send Us Your Inquiry</h2>
+                    <p>Have questions about our gallery or motorcycles? Fill out the form below and we'll get back to you within 24 hours</p>
+                </div>
+
+                <form class="contact-form" id="contactForm" method="POST" action="/contact" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name" aria-required="true">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email address" aria-required="true">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="What is your inquiry about?" aria-required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category">Inquiry Type *</label>
+                            <select id="category" name="category" required aria-required="true">
+                                <option value="">-- Select Type --</option>
+                                <option value="gallery">Gallery Information</option>
+                                <option value="motorcycle">Motorcycle Inquiry</option>
+                                <option value="collection">Collection Information</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="media">Media Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="8" required placeholder="Tell us more about your inquiry..." aria-required="true"></textarea>
+                        <span class="char-count"><span id="charCount">0</span>/1000</span>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label for="subscribe">
+                            <input type="checkbox" id="subscribe" name="subscribe">
+                            Subscribe to our gallery updates and new additions
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label for="terms">
+                            <input type="checkbox" id="terms" name="terms" required aria-required="true">
+                            I agree to the terms and conditions *
+                        </label>
+                        <span class="error-message" id="termsError"></span>
+                    </div>
+
+                    <button type="submit" class="cta-button" aria-label="Submit contact form">Send Inquiry</button>
+
+                    <div class="form-status" id="formStatus">
+                        <p id="statusMessage"></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- FAQ Section -->
+            <section class="faq-section" aria-labelledby="faq-heading">
+                <h2 id="faq-heading" class="section-title">Gallery FAQs</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFAQ(this)">
+                            <h3>How often is the gallery updated?</h3>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="faq-content">
+                            <p>Our gallery is regularly updated with new motorcycles and information. We add featured models monthly and continuously refresh our collection with the latest motorcycles from around the world.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFAQ(this)">
+                            <h3>Can I request a specific motorcycle to be featured?</h3>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="faq-content">
+                            <p>Yes! We welcome suggestions from motorcycle enthusiasts. Please contact us with details about the motorcycle you'd like to see featured in our gallery, and we'll consider it for inclusion.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFAQ(this)">
+                            <h3>Can I use gallery photos for my website or publication?</h3>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="faq-content">
+                            <p>Please contact us regarding photo usage rights. We may be able to grant permission for certain uses with proper attribution. Contact our gallery team for more information.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFAQ(this)">
+                            <h3>Do you offer gallery tours or visits?</h3>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="faq-content">
+                            <p>Yes! We welcome visitors to our physical gallery location. Please contact us to schedule a visit or tour. Group visits can be arranged with advance notice.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFAQ(this)">
+                            <h3>How can I stay updated on new gallery additions?</h3>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="faq-content">
+                            <p>Subscribe to our gallery updates through our contact form or newsletter. You'll receive notifications about new motorcycles, collections, and gallery features directly in your inbox.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFAQ(this)">
+                            <h3>Can I provide feedback on the gallery?</h3>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="faq-content">
+                            <p>Absolutely! We value your feedback. Please use our contact form to share your thoughts, suggestions, or any improvements you'd like to see in our gallery.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>M Gallery</h4>
+                    <p>Your premier destination for premium motorcycle gallery and showcase</p>
+                    <div class="social-links" role="list">
+                        <a href="#" role="listitem" aria-label="M Gallery Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" role="listitem" aria-label="M Gallery Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" role="listitem" aria-label="M Gallery Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" role="listitem" aria-label="M Gallery YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul role="list">
+                        <li role="listitem"><a href="index.html">Home</a></li>
+                        <li role="listitem"><a href="gallery.html">Gallery</a></li>
+                        <li role="listitem"><a href="collection.html">Collections</a></li>
+                        <li role="listitem"><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Collections</h4>
+                    <ul role="list">
+                        <li role="listitem"><a href="collection.html#sport">Sport Collection</a></li>
+                        <li role="listitem"><a href="collection.html#cruiser">Cruiser Collection</a></li>
+                        <li role="listitem"><a href="collection.html#adventure">Adventure Collection</a></li>
+                        <li role="listitem"><a href="collection.html#touring">Touring Collection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul role="list">
+                        <li role="listitem"><a href="#" rel="nofollow">Gallery FAQ</a></li>
+                        <li role="listitem"><a href="#" rel="nofollow">Privacy Policy</a></li>
+                        <li role="listitem"><a href="#" rel="nofollow">Terms of Service</a></li>
+                        <li role="listitem"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 M Gallery. All Rights Reserved. | Premium Motorcycle Gallery | <a href="sitemap.xml" rel="nofollow">Sitemap</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
