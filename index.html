@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="M Gallery - Premium motorcycle gallery showcase. Explore exclusive collection of luxury motorcycles including sport, cruiser, adventure, and touring bikes.">
+    <meta name="keywords" content="motorcycle gallery, luxury motorcycles showcase, sport bikes, cruiser motorcycles, adventure bikes, motorcycle collection">
+    <meta name="author" content="M Gallery">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="M Gallery - Premium Motorcycle Gallery Showcase">
+    <meta property="og:description" content="Discover exclusive collection of premium motorcycles in our gallery">
+    <meta property="og:type" content="website">
+    
+    <title>M Gallery - Premium Motorcycle Gallery Showcase</title>
+    <link rel="canonical" href="https://www.mgallery.com/">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX', {
+            'page_path': window.location.pathname,
+            'page_title': document.title
+        });
+    </script>
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "M Gallery",
+      "url": "https://www.mgallery.com",
+      "logo": "https://www.mgallery.com/logo.png",
+      "description": "Premium motorcycle gallery showcase featuring luxury bikes",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-555-123-4567",
+        "contactType": "Gallery Inquiry"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Gallery Street",
+        "addressLocality": "Premium City",
+        "addressRegion": "PC",
+        "postalCode": "12345",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-motorcycle" aria-hidden="true"></i>
+                <span>M Gallery</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="collection.html" class="nav-link">Collections</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" role="banner">
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">M GALLERY</h1>
+            <div class="title-underline"></div>
+            <p class="hero-subtitle">Premium Motorcycle Gallery Showcase</p>
+            <p class="hero-description">Discover an exclusive gallery of premium motorcycles featuring the finest designs, craftsmanship, and engineering from around the world.</p>
+            <button class="cta-button" onclick="window.location.href='gallery.html'" aria-label="Explore motorcycle gallery">Explore Gallery</button>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Featured Motorcycles Section -->
+    <section class="featured" aria-labelledby="featured-title">
+        <div class="container">
+            <h2 id="featured-title" class="section-title">Featured Motorcycles</h2>
+            <div class="featured-grid">
+                <!-- Sport Bike -->
+                <article class="featured-card">
+                    <div class="featured-image">
+                        <img src="https://www.cycleworld.com/resizer/FNiCjJYFHmvrj0B2Ik2ft1h0hJA=/1440x0/smart/cloudfront-us-east-1.images.arcpublishing.com/octane/3QSKYK4E65CCFI4WLDPO63VM3Q.jpg" alt="Velocity Pro - High-performance sport motorcycle">
+                        <span class="badge">Featured</span>
+                    </div>
+                    <div class="featured-info">
+                        <h3>Ducati Panigale V4</h3>
+                        <p class="specs"><i class="fas fa-tachometer-alt" aria-hidden="true"></i> High-Performance Sport</p>
+                        <p class="specs"><i class="fas fa-bolt" aria-hidden="true"></i> 215 HP Engine</p>
+                        <div class="rating" aria-label="Rating: 4.5 out of 5 stars">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <span class="rating-text">(5/5)</span>
+                        </div>
+                        <button class="btn-secondary" onclick="window.location.href='gallery.html'" aria-label="View Velocity Pro motorcycle">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Cruiser Bike -->
+                <article class="featured-card">
+                    <div class="featured-image">
+                        <img src="https://buyasuperbike.com/wp-content/uploads/2024/12/20240108140407.jpg" alt="Elite Cruiser - Classic luxury cruiser motorcycle">
+                        <span class="badge">Featured</span>
+                    </div>
+                    <div class="featured-info">
+                        <h3>Benda Napoleon Bob 500</h3>
+                        <p class="specs"><i class="fas fa-crown" aria-hidden="true"></i> Classic Luxury Cruiser</p>
+                        <p class="specs"><i class="fas fa-check" aria-hidden="true"></i> 46.9 HP Engine</p>
+                        <div class="rating" aria-label="Rating: 5 out of 5 stars">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <span class="rating-text">(5/5)</span>
+                        </div>
+                        <button class="btn-secondary" onclick="window.location.href='gallery.html'" aria-label="View Elite Cruiser motorcycle">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Adventure Bike -->
+                <article class="featured-card">
+                    <div class="featured-image">
+                        <img src="https://imgcdn.zigwheels.my/large/gallery/exterior/54/1194/bmw-s-1000-xr-slant-front-view-full-image-245883.jpg" alt="Adventure Master - All-terrain adventure motorcycle">
+                        <span class="badge">Featured</span>
+                    </div>
+                    <div class="featured-info">
+                        <h3>BMW S 1000 XR</h3>
+                        <p class="specs"><i class="fas fa-mountain" aria-hidden="true"></i> All-Terrain Adventure</p>
+                        <p class="specs"><i class="fas fa-road" aria-hidden="true"></i> 162 HP Engine</p>
+                        <div class="rating" aria-label="Rating: 4.5 out of 5 stars">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <span class="rating-text">(5/5)</span>
+                        </div>
+                        <button class="btn-secondary" onclick="window.location.href='gallery.html'" aria-label="View Adventure Master motorcycle">View Details</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Preview Section -->
+    <section class="collection-preview" aria-labelledby="collection-title">
+        <div class="container">
+            <h2 id="collection-title" class="section-title">Our Collections</h2>
+            <div class="collection-preview-grid">
+                <div class="collection-card">
+                    <div class="collection-icon" aria-hidden="true">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Sport Collection</h3>
+                    <p>High-performance sport motorcycles designed for speed and precision</p>
+                    <a href="collection.html#sport" class="link-btn">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-icon" aria-hidden="true">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Cruiser Collection</h3>
+                    <p>Classic luxury cruisers with commanding presence and elegance</p>
+                    <a href="collection.html#cruiser" class="link-btn">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-icon" aria-hidden="true">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Adventure Collection</h3>
+                    <p>Versatile adventure motorcycles for any terrain and journey</p>
+                    <a href="collection.html#adventure" class="link-btn">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-icon" aria-hidden="true">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Touring Collection</h3>
+                    <p>Premium touring motorcycles for long-distance comfort and luxury</p>
+                    <a href="collection.html#touring" class="link-btn">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Highlights Section -->
+    <section class="gallery-highlights" aria-labelledby="highlights-title">
+        <div class="container">
+            <h2 id="highlights-title" class="section-title">Gallery Highlights</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon" aria-hidden="true">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Extensive Collection</h3>
+                    <p>Browse our gallery of over 100 premium motorcycles from leading manufacturers worldwide</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon" aria-hidden="true">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>High-Quality Photography</h3>
+                    <p>Professional photography showcasing every detail and angle of each motorcycle</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon" aria-hidden="true">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Curated Selection</h3>
+                    <p>Handpicked motorcycles representing the finest in design and engineering</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon" aria-hidden="true">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <h3>Detailed Information</h3>
+                    <p>Comprehensive specifications and features for every motorcycle in our gallery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section" role="region" aria-labelledby="cta-heading">
+        <div class="container">
+            <h2 id="cta-heading">Explore Our Complete Gallery</h2>
+            <p>Discover the artistry and engineering of premium motorcycles</p>
+            <button class="cta-button" onclick="window.location.href='gallery.html'" aria-label="Browse complete motorcycle gallery">View Full Gallery</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>M Gallery</h4>
+                    <p>Your premier destination for premium motorcycle gallery and showcase</p>
+                    <div class="social-links" role="list">
+                        <a href="#" role="listitem" aria-label="M Gallery Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" role="listitem" aria-label="M Gallery Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" role="listitem" aria-label="M Gallery Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" role="listitem" aria-label="M Gallery YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul role="list">
+                        <li role="listitem"><a href="index.html">Home</a></li>
+                        <li role="listitem"><a href="gallery.html">Gallery</a></li>
+                        <li role="listitem"><a href="collection.html">Collections</a></li>
+                        <li role="listitem"><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Gallery Collections</h4>
+                    <ul role="list">
+                        <li role="listitem"><a href="collection.html#sport">Sport Bikes</a></li>
+                        <li role="listitem"><a href="collection.html#cruiser">Cruiser Bikes</a></li>
+                        <li role="listitem"><a href="collection.html#adventure">Adventure Bikes</a></li>
+                        <li role="listitem"><a href="collection.html#touring">Touring Bikes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul role="list">
+                        <li role="listitem"><a href="#" rel="nofollow">Gallery FAQ</a></li>
+                        <li role="listitem"><a href="#" rel="nofollow">Privacy Policy</a></li>
+                        <li role="listitem"><a href="#" rel="nofollow">Terms of Service</a></li>
+                        <li role="listitem"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 M Gallery. All Rights Reserved. | Premium Motorcycle Gallery Showcase | <a href="sitemap.xml" rel="nofollow">Sitemap</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
